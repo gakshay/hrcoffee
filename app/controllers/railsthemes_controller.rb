@@ -8,4 +8,5 @@ class RailsthemesController < ApplicationController
   def landing
     render :layout => 'landing'
   end
+  
 end
