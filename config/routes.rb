@@ -2,8 +2,10 @@ Hrcoffee::Application.routes.draw do
   
   get "home/index"
   root :to => "home#index"
-
-  resources :home
+  
+  resources :home do
+    get :click_to_call_callback, :on => :collection
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

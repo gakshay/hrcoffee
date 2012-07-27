@@ -1,2 +1,21 @@
 <% content_for :page_title, "Home Page" %>
-<h1>Hello World</h1>
+
+<%= field_set_tag 'Call setup' do %>
+<br>
+  <p><%= text_field_tag("caller", nil, :placeholder => "Your mobile No", :maxlength => 10)%> 
+	<%= text_field_tag("callie", nil, :placeholder => "Candidate Mobile No", :maxlength => 10)%> 
+ </p>
+	<%= button_tag "Click to Call", :id => "call_setup"  %>
+	
+	<script type = "text/javascript">
+	$('#call_setup').click(function() {
+		var caller = $("#caller").val();
+		var callie = $("#callie").val();
+		alert("Caller: " + caller + " Callie: " + callie);
+	});
+	</script>
+
+<% end %>
+
+
+
