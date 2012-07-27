@@ -66,3 +66,7 @@
   - hrcoffee_production_collectd
   - hrcoffee_production_monit
   zone: us-east-1a
+- volumes: {}
+
+  static_ips: {}
+

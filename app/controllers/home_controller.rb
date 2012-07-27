@@ -8,9 +8,16 @@ class HomeController < ApplicationController
  
   def click_to_call_callback
     print params.inspect
-    respond_to do |format|
-      format.html {render :text => "Parameters saved", :status => "ok"}
-      format.xml {render :xml => {:status => "ok"}}
+    if params.count > 2
+      respond_to do |format|
+        format.html {render :text => "Parameters saved", :status => "ok"}
+        format.xml {render :xml => {:status => "ok"}}
+      end
+    else
+      respond_to do |format|
+        format.html {render :text => "No Parameters found", :status => "ok"}
+        format.xml {render :xml => {:status => "error"}}
+      end
     end
   end
 end

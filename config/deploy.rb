@@ -1,6 +1,7 @@
 # This is a sample Capistrano config file for rubber
 
 set :rails_env, Rubber.env
+set :assets_role, [:app]
 
 on :load do
   set :application, rubber_env.app_name
