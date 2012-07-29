@@ -1,8 +1,8 @@
 --- 
 - !ruby/object:Rubber::Configuration::InstanceItem 
   domain: interviewer.in
-  external_host: ec2-23-22-98-131.compute-1.amazonaws.com
-  external_ip: 23.22.98.131
+  external_host: ec2-107-20-156-86.compute-1.amazonaws.com
+  external_ip: 107.20.156.86
   image_id: ami-4dad7424
   image_type: t1.micro
   instance_id: i-0a4c5272
