@@ -2,7 +2,7 @@
 app_name: hrcoffee
 
 # REQUIRED: The system user to run your app servers as
-app_user: ubuntu
+app_user: www-data
 
 # REQUIRED: Notification emails (e.g. monit) get sent to this address
 #

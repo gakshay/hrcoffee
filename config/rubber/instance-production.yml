@@ -5,10 +5,10 @@
   external_ip: 107.20.156.86
   image_id: ami-4dad7424
   image_type: t1.micro
-  instance_id: i-0a4c5272
-  internal_host: ip-10-205-9-165.ec2.internal
-  internal_ip: 10.205.9.165
-  name: staging
+  instance_id: i-662c2a1e
+  internal_host: domU-12-31-39-10-65-29.compute-1.internal
+  internal_ip: 10.198.102.215
+  name: production
   platform: linux
   roles: 
   - !ruby/object:Rubber::Configuration::RoleItem 
@@ -55,7 +55,7 @@
   security_groups: 
   - hrcoffee_production_default
   - hrcoffee_production_web
-  - hrcoffee_production_staging
+  - hrcoffee_production_production
   - hrcoffee_production_haproxy
   - hrcoffee_production_app
   - hrcoffee_production_passenger
@@ -65,7 +65,7 @@
   - hrcoffee_production_mysql_master
   - hrcoffee_production_collectd
   - hrcoffee_production_monit
-  zone: us-east-1b
+  zone: us-east-1a
 - volumes: {}
 
   static_ips: {}
